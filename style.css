@@ -1,0 +1,12 @@
+p{
+ text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+.car{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
