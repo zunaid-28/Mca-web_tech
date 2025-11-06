@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+         
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h2{ 
+            text-align: center;
+            font-family: "Poppins", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        label{
+            text-align: center;
+            font-family: "Poppins", serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        h1{
+            text-align: center;
+            font-family: "Jost", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:700;
+            font-style: normal;
+            background-color: rgba(128, 128, 128, 0.363);
+        }
+
+        main{
+            background-color: white;
+        }
+
+        div{
+            text-align: center;
+
+        }
+        .fp{
+            background-color:rgba(128, 128, 128, 0.363);
+        }
+        a{
+            background-color: red;
+            color:yellowgreen;
+        }
+        a:hover{
+            color:black;
+        }
+</style>
+</head>
+<body>
+    
+    <h1>REGISTRATION FORM </h1>
+    <main>
+    <h2>Personal Information</h2>
+    <div class="pi">
+    <form action="post">
+   <label for="firstname">FirstName*</label>
+   <input type="text" name="name"  placeholder="in capital" required pattern="[A-Z]"> 
+   <label for="lastname">LastName*</label>
+   <input type="text" name="name" id="lastname" placeholder="in capital" required pattern="[A-Z]"> 
+   <label for="Mobilenumber">Mobile Number*</label>
+   <input type="text" name="mobileno" id="mobilenumber" placeholder="(10 digits)" required pattern="[0-9]">
+</div>
+   <div>
+    <br>
+   <label for="gender">Gender*</label>
+   <br>
+   <label for="male">Male</label>
+   <input type="radio" name="Gender" id="male" value="male">
+   <label for="female">female</label>
+   <input type="radio" name="Gender" id="female" value="female">
+   <label for="Not specified">Not specified</label>
+   <input type="radio" name="Gender" id="Not specified" value="Not specified">
+   <br>
+   <label for="address">Addrress*</label>
+   <br>
+   <textarea name="address" id="address" cols="30" rows="5"></textarea> <BR></BR><br><hr>
+   <h2>Education Information</h2><br>
+   <div>
+   <select name="board" id="board" >
+    <option value="select">-- Select your board--</option>
+   <option value="Cbse">CBSE BOARD</option>
+   <option value="State board">STATE BOARD</option>
+   <option value="icse">ICSE BOARD</option>
+</select>
+ <label for="percentage">Enter your marks got in 12th</label>
+ <textarea name="percentage" id="percetage" cols="5" rows="1"></textarea>
+</div>
+</main>
+<div  class="fp">
+    <h2> Fee Payment</h2><br>
+<input type="submit" value="Submit">
+</div>
+</div>
+    </form>
+</body>
+</html>
