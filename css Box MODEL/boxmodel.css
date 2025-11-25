@@ -1,0 +1,30 @@
+/* CSS Box Model Demonstration */
+
+/* Margin is the outermost space around the element */
+.box {
+    margin: 40px;
+    /* Margin color is not visible; space separates from other elements */
+    
+    /* Border - solid line around padding and content */
+    border: 5px solid #4CAF50;
+    
+    /* Padding - space between border and content */
+    padding: 20px;
+    
+    /* Content area background */
+    background-color: #f8f8f8;
+    
+    /* Width and height set for demonstration */
+    width: 300px;
+    height: 150px;
+    
+    /* Text alignment and font */
+    text-align: center;
+    line-height: 150px; /* vertically centers text */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    box-sizing: content-box; /* default box model */
+}
+
+/* Add labels to visually separate margin, border, padding, and content (optional) */
